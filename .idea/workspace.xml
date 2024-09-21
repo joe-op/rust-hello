@@ -8,15 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0789a673-a3c2-4c8d-be93-08191835ca5f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rust-hello.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +37,8 @@
   "keyToString": {
     "Cargo.Run Andy.executor": "Run",
     "Cargo.Run w/args - No build or debug.executor": "Run",
-    "Cargo.Run w/args - No debug.executor": "Run",
+    "Cargo.Run w/args - No debug.executor": "Debug",
+    "Cargo.Run w/args - Program fails.executor": "Run",
     "Cargo.Run.executor": "Run",
     "Cargo.add.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -65,9 +61,9 @@
       <command value="cargo add clap" />
     </option>
   </component>
-  <component name="RunManager" selected="Cargo.Run w/args - No build or debug">
+  <component name="RunManager" selected="Cargo.Run w/args - Program fails">
     <configuration name="Run w/args - No build or debug" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="command" value="run -- --name Andy" />
+      <option name="command" value="run greet --name=Andy" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -84,7 +80,7 @@
       </method>
     </configuration>
     <configuration name="Run w/args - No debug" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="command" value="run --  --name=Andy" />
+      <option name="command" value="run greet --name=Andy" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
       <option name="emulateTerminal" value="true" />
@@ -97,6 +93,23 @@
       <option name="isRedirectInput" value="false" />
       <option name="redirectInputPath" value="" />
       <method v="2" />
+    </configuration>
+    <configuration name="Run w/args - Program fails" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="command" value="run -- greet --name=Andy" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Run" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="buildProfileId" value="dev" />
@@ -116,7 +129,7 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="add" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+    <configuration name="add" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="add clap" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$" />
       <envs />
@@ -137,13 +150,9 @@
       <item itemvalue="Cargo.Run" />
       <item itemvalue="Cargo.Run w/args - No build or debug" />
       <item itemvalue="Cargo.Run w/args - No debug" />
+      <item itemvalue="Cargo.Run w/args - Program fails" />
       <item itemvalue="Cargo.add" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Cargo.add" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
@@ -158,22 +167,12 @@
       <updated>1726956241771</updated>
       <workItem from="1726956244519" duration="639000" />
       <workItem from="1726956999424" duration="1303000" />
+      <workItem from="1726958329566" duration="1429000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/src/main.rs</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
